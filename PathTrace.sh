@@ -72,7 +72,8 @@ sleep 1
 echo -e "\033[1;32m========================= 🏠 Listando el Directorio Home y Usuarios 🏠 =========================\033[0m"
 echo -e "\033[1;33m1: Usuarios Válidos del sistema.\033[0m"
 sleep 1
-cat /etc/passwd | grep "/bin/bash"
+cat /etc/passwd | grep "bash"
+cat /etc/passwd | grep "zsh"
 
 echo -e "\n"
 sleep 1
