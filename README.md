@@ -22,12 +22,12 @@
 PathTrace es una herramienta de auditoría que automatiza el proceso de recolección de información crítica en sistemas Linux, optimizando la terminal y proporcionando estabilidad:
 
 #### ⭐ Optimiza la Terminal y Proporciona Estabilidad
-#### 🔎 Reconocimiento del Sistema (versiones de Bash y Sudo)
-#### 🔎 Auditoría de Archivos Sensibles (archivos de configuración, claves SSH, backups)
-#### 🔎 Análisis de Usuarios y Permisos (usuarios, directorios, SUID/GUID)
+#### 🔎 Reconocimiento del Sistema
+#### 🔎 Auditoría de Archivos Sensibles
+#### 🔎 Análisis de Usuarios y Permisos
 #### 🔎 Revisión de Cron y Tareas Programadas
 #### 🔎 Descubrimiento de Interfaces de Red y Configuraciones de Red
-#### 🔎 Auditoría de Servicios Web (Apache, Nginx)
+#### 🔎 Auditoría de Servicios Web
 #### 🔎 Exploración de Directorios Críticos
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
