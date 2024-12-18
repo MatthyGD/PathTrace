@@ -338,14 +338,6 @@ ls -la /tmp
 echo -e "\n"
 sleep 1
 
-# Listando el directorio /opt
-echo -e "\033[1;34m========================= 📦 Listando el Directorio /opt 📦 =========================\033[0m"
-sleep 1
-ls -la /opt
-
-echo -e "\n"
-sleep 1
-
 # Listando el directorio /mnt
 echo -e "\033[1;33m========================= 🛠️ Listando el Directorio /mnt 🛠️ =========================\033[0m"
 sleep 1
