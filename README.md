@@ -17,44 +17,17 @@
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-###🕵️ PathTrace 🕵️
-PathTrace es una herramienta avanzada diseñada para automatizar una amplia variedad de tareas de auditoría y descubrimiento en sistemas Linux. Con un enfoque en la estabilidad y optimización del terminal, PathTrace proporciona una visión integral de las configuraciones y posibles vulnerabilidades del sistema. A continuación se describen las principales funcionalidades que automatiza:
+### 🕵️ PathTrace
+PathTrace es una herramienta de auditoría que automatiza el proceso de recolección de información crítica en sistemas Linux, optimizando la terminal y proporcionando estabilidad:
 
-#### ⭐ Optimiza tu Terminal y Proporciona Estabilidad
-PathTrace ayuda a mantener un entorno de trabajo estable y eficiente al automatizar la recolección de información crítica, optimizando el flujo de trabajo del auditor o administrador de sistemas.
-#### 🔎 Reconocimiento del Sistema
-Automatiza la recopilación de información relevante sobre el sistema, incluyendo el nombre, arquitectura, y detalles generales del entorno.
-#### 🔎 Reconocimiento de la Versión de la Bash
-Detecta la versión instalada de Bash, permitiendo verificar si existen vulnerabilidades conocidas asociadas con la versión en uso.
-#### 🔎 Reconocimiento de la Versión del Sudo
-Extrae la versión de sudo instalada, lo que es crucial para evaluar la seguridad del sistema, especialmente en entornos con privilegios elevados.
-#### 🔎 Lista Archivos Sensibles del Sistema
-Identifica y enumera archivos que pueden contener información sensible, como configuraciones de red, contraseñas, claves SSH, etc.
-#### 🔎 Lista los Usuarios en el Sistema junto con sus Directorios
-Extrae una lista de usuarios en el sistema y sus respectivos directorios de inicio.
-#### 🔎 Reconocimiento del Historial del Usuario
-Analiza el historial de comandos de los usuarios, proporcionando un rastro detallado de actividades previas.
-#### 🔎 Lista la Información del Usuario
-Muestra información detallada sobre cada usuario, incluyendo su ID de usuario (UID), grupos a los que pertenece y detalles de autenticación.
-#### 🔎 Lista Claves SSH
-Detecta claves SSH presentes en el sistema, lo que ayuda a identificar accesos remotos configurados.
-#### 🔎 Lista Toda Clase de Archivos Backup en el Sistema
-Enumera los archivos de respaldo presentes en el sistema que podrían ser de interés en un análisis de seguridad.
-#### 🔎 Lista SUID/GUID
-Identifica archivos con permisos SUID/SGID que pueden permitir escalada de privilegios en el sistema.
-#### 🔎 Lista Capabilities
-Muestra las capacidades asignadas a los archivos binarios en el sistema, lo que ayuda a identificar posibles vectores de ataque.
-#### 🔎 Lista Tareas Cron
-Enumera las tareas programadas en el sistema, ayudando a detectar posibles tareas maliciosas o no autorizadas.
-#### 🔎 Lista Interfaces de Redes
-Descubre todas las interfaces de red disponibles en el sistema, incluyendo interfaces físicas y virtuales.
-#### 🔎 Lista la Información del Directorio /proc/net
-Extrae información sobre las conexiones de red activas y los sockets abiertos, proporcionando datos útiles sobre las comunicaciones del sistema.
-#### 🔎 Lista la Información de Apache & Nginx
-Recopila información sobre las configuraciones de los servidores web Apache y Nginx, identificando posibles configuraciones inseguras.
-#### 🔎 Lista Directorios Críticos del Sistema
-Detecta directorios críticos que a menudo contienen archivos sensibles o configuraciones importantes, tales como:
-/tmp, /opt, /mnt, /var/backups, /var/mail y otros.
+#### ⭐ Optimiza la Terminal y Proporciona Estabilidad
+#### 🔎 Reconocimiento del Sistema (versiones de Bash y Sudo)
+#### 🔎 Auditoría de Archivos Sensibles (archivos de configuración, claves SSH, backups)
+#### 🔎 Análisis de Usuarios y Permisos (usuarios, directorios, SUID/GUID)
+#### 🔎 Revisión de Cron y Tareas Programadas
+#### 🔎 Descubrimiento de Interfaces de Red y Configuraciones de Red
+#### 🔎 Auditoría de Servicios Web (Apache, Nginx)
+#### 🔎 Exploración de Directorios Críticos (/tmp, /opt, /var/mail, y más)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
