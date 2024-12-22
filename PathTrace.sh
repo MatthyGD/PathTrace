@@ -58,12 +58,51 @@ sleep 1
 # Listando archivos sensibles
 echo -e "\033[1;31m========================= 🚨 Listando Archivos Sensibles 🚨 =========================\033[0m"
 sleep 0.5
+echo -e "\033[1;33m1: Contemplando permisos del /etc/passwd.\033[0m"
+sleep 0.5
 ls -l /etc/passwd 2>/dev/null
+
+echo -e "\n"
+
+echo -e "\033[1;33m2: Contemplando permisos del /etc/shadow.\033[0m"
+sleep 0.5
 ls -l /etc/shadow 2>/dev/null
+
+echo -e "\n"
+
+echo -e "\033[1;33m3: Contemplando permisos del /etc/group.\033[0m"
+sleep 0.5
 ls -l /etc/group 2>/dev/null
+
+echo -e "\n"
+
+echo -e "\033[1;33m4: Contemplando permisos del /etc/sudoers.\033[0m"
+sleep 0.5
 ls -l /etc/sudoers 2>/dev/null
-ls -l /usr/share/ssl-cert/ 2>/dev/null
+
+echo -e "\n"
+
+echo -e "\033[1;33m5: Contemplando permisos del /etc/crontab.\033[0m"
+sleep 0.5
+ls -l /etc/crontab 2>/dev/null
+
+echo -e "\n"
+
+echo -e "\033[1;33m6: Contemplando permisos del /boot/grub/grub.cfg.\033[0m"
+sleep 0.5
+ls -l /boot/grub/grub.cfg 2>/dev/null
+
+echo -e "\n"
+
+echo -e "\033[1;33m7: Contemplando permisos del /proc/sched_debug.\033[0m"
+sleep 0.5
 ls -l /proc/sched_debug/ 2>/dev/null
+
+echo -e "\n"
+
+echo -e "\033[1;33m8: Contemplando permisos del /usr/share/ssl-cert.\033[0m"
+sleep 0.5
+ls -l /usr/share/ssl-cert/ 2>/dev/null
 
 echo -e "\n"
 sleep 1
@@ -346,18 +385,26 @@ cat /etc/nginx/sites-available/default-ssl 2>/dev/null || true
 echo -e "\n"
 sleep 1
 
-# Listando el directorio /opt
-echo -e "\033[1;34m========================= 📦 Listando el Directorio /opt 📦 =========================\033[0m"
-sleep 0.5
-ls -la /opt 2>/dev/null
-
-echo -e "\n"
-sleep 1
-
 # Listando directorio /tmp
 echo -e "\033[1;32m========================= 🗑️ Listando Archivos en /tmp 🗑️ =========================\033[0m"
 sleep 0.5
 ls -la /tmp 2>/dev/null
+
+echo -e "\n"
+sleep 1
+
+# Listando el directorio /root
+echo -e "\033[1;31m========================= 👨‍💼 Listando el Directorio /root 👨‍💼 =========================\033[0m"
+sleep 0.5
+ls -la /root 2>/dev/null
+
+echo -e "\n"
+sleep 1
+
+# Listando el directorio /opt
+echo -e "\033[1;34m========================= 📦 Listando el Directorio /opt 📦 =========================\033[0m"
+sleep 0.5
+ls -la /opt 2>/dev/null
 
 echo -e "\n"
 sleep 1
