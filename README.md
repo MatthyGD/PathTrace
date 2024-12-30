@@ -27,6 +27,9 @@ PathTrace es una herramienta de auditoría que automatiza el proceso de recolecc
 #### 🔎 Análisis de Usuarios y Permisos
 #### 🔎 Auditoría de Archivos Comprimidos
 #### 🔎 Auditoría de Archivos Backup
+#### 🔎 Descubrimiento de Bases de Datos
+#### 🔎 Descubrimiento de Gestores de Contenido
+#### 🔎 Descubrimiento de Gestores de Contraseñas
 #### 🔎 Revisión de Cron y Tareas Programadas
 #### 🔎 Descubrimiento de Interfaces de Red y Configuraciones de Red
 #### 🔎 Auditoría de Servicios Web
