@@ -173,13 +173,13 @@ find / -name "*.rar" 2>/dev/null
 
 echo -e "\n"
 
-echo -e "\033[1;33m3: Listando Archivos que contemplen el nombre 7z.\033[0m"
+echo -e "\033[1;33m3: Listando Archivos con Extension 7z.\033[0m"
 sleep 0.5
 find / -name "*.7z" 2>/dev/null
 
 echo -e "\n"
 
-echo -e "\033[1;33m4: Listando Archivos que contemplen el nombre Tar.\033[0m"
+echo -e "\033[1;33m4: Listando Archivos con Extension Tar.\033[0m"
 sleep 0.5
 find / -name "*.tar" 2>/dev/null
 
@@ -231,6 +231,47 @@ find / -name "*.sqlite3" 2>/dev/null
 echo -e "\n"
 sleep 1
 
+# Listando Posibles Gestores de Contenido
+echo -e "\033[1;31m========================= 🗄️ Listando Gestores de Contenido 🗄️ =========================\033[0m"
+sleep 0.5
+echo -e "\033[1;33m1: Listando Wordpress.\033[0m"
+sleep 0.5
+find / -name "config-default.php" 2>/dev/null
+find / -name "wp-config.php" 2>/dev/null
+
+echo -e "\n"
+
+echo -e "\033[1;33m2: Listando Drupal.\033[0m"
+sleep 0.5
+find / -name "settings.php" 2>/dev/null
+
+echo -e "\n"
+
+echo -e "\033[1;33m3: Listando Jenkins.\033[0m"
+sleep 0.5
+find / -name "users.xml" 2>/dev/null
+
+echo -e "\n"
+
+echo -e "\033[1;33m4: Listando Tomcat.\033[0m"
+sleep 0.5
+find / -name "tomcat-users.xml" 2>/dev/null
+
+echo -e "\n"
+
+echo -e "\033[1;33m5: Listando Webmin.\033[0m"
+sleep 0.5
+find / -name "miniserv.users" 2>/dev/null
+
+echo -e "\n"
+
+echo -e "\033[1;33m6: Listando Dolibarr.\033[0m"
+sleep 0.5
+find / -name "conf.php" 2>/dev/null
+
+echo -e "\n"
+sleep 1
+
 # Listando Posibles Gestores de Contraseñas
 echo -e "\033[1;31m========================= 🔐 Listando Gestores de Contraseñas 🔐 =========================\033[0m"
 sleep 0.5
@@ -266,13 +307,13 @@ sleep 1
 # Listando binarios SUID
 echo -e "\033[1;33m========================= 🔧 Listando Binarios SUID 🔧 =========================\033[0m"
 sleep 0.5
-echo -e "\033[1;33m1: SUID\033[0m"
+echo -e "\033[1;33m1: SUID.\033[0m"
 sleep 0.5
 find / -perm -4000 -ls 2>/dev/null
 
 echo -e "\n"
 
-echo -e "\033[1;33m2: GUID\033[0m"
+echo -e "\033[1;33m2: GUID.\033[0m"
 sleep 0.5
 find / -perm -2000 -ls 2>/dev/null
 
@@ -306,13 +347,13 @@ sleep 1
 # Listando puertos abiertos del sistema
 echo -e "\033[1;34m========================= 🌐 Listando Puertos Abiertos del Sistema 🌐 =========================\033[0m"
 sleep 0.5
-echo -e "\033[1;33m1: Listando Servicios TCP\033[0m"
+echo -e "\033[1;33m1: Listando Servicios TCP.\033[0m"
 sleep 0.5
 ss -tunlp | grep "tcp" 2>/dev/null
 
 echo -e "\n"
 
-echo -e "\033[1;33m1: Listando Servicios UDP\033[0m"
+echo -e "\033[1;33m1: Listando Servicios UDP.\033[0m"
 sleep 0.5
 ss -tunlp | grep "udp" 2>/dev/null
 
@@ -340,6 +381,21 @@ cat /proc/net/if_inet6 2>/dev/null
 
 echo -e "\n"
 sleep 1
+
+# Listando el .htaccess y .htpasswd
+echo -e "\033[1;32m========================= 🖥️ Listando el .htaccess y .htpasswd 🖥️ =========================\033[0m"
+sleep 0.5
+echo -e "\033[1;33m1: Listando .htaccess.\033[0m"
+sleep 0.5
+find / -name ".htaccess" 2>/dev/null
+
+echo -e "\n"
+
+echo -e "\033[1;33m2: Listando .htpasswd.\033[0m"
+sleep 0.5
+find / -name ".htpasswd" 2>/dev/null
+
+echo -e "\n"
 
 # Listando los archivos importantes de Apache
 echo -e "\033[1;32m========================= 🐘 Listando los Archivos Importantes de Apache 🐘 =========================\033[0m"
