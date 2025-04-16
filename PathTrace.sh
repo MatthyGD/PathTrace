@@ -94,6 +94,12 @@ ls -l /boot/grub/grub.cfg 2>/dev/null
 
 echo -e "\n"
 
+echo -e "\033[1;33m6: Contemplando permisos del /etc/ssh/sshd_config.\033[0m"
+sleep 0.5
+ls -l /etc/ssh/sshd_config 2>/dev/null
+
+echo -e "\n"
+
 echo -e "\033[1;33m7: Contemplando permisos del /proc/sched_debug.\033[0m"
 sleep 0.5
 ls -l /proc/sched_debug/ 2>/dev/null
