@@ -79,6 +79,16 @@ sudo -V | grep -i "sudo" | head -n 1 | awk '{print $3}' 2>/dev/null
 echo -e "\n"
 sleep 1
 
+# Listing system process
+echo -e "\033[1;32m========================= 💻 Listing System Process 💻 =========================\033[0m"
+sleep 0.5
+echo -e "\033[1;33m1: Checking System Process.\033[0m"
+sleep 0.5
+ps -faux
+
+echo -e "\n"
+sleep 1
+
 # Listing sensitive files
 echo -e "\033[1;31m========================= 🚨 Listing Sensitive Files 🚨 =========================\033[0m"
 sleep 0.5
@@ -137,6 +147,16 @@ ls -l /usr/share/ssl-cert/ 2>/dev/null
 echo -e "\n"
 sleep 1
 
+# Listing AppArmor directory
+echo -e "\033[1;32m========================= � Listing AppArmor directory 🛡️ =========================\033[0m"
+sleep 0.5
+echo -e "\033[1;33m1: Checking /etc/apparmor.d\033[0m"
+sleep 0.5
+ls -l /etc/apparmor.d 2>/dev/null
+
+echo -e "\n"
+sleep 1
+
 # Listing home directory and users
 echo -e "\033[1;32m========================= � Listing Home Directory and Users 🏠 =========================\033[0m"
 sleep 0.5
@@ -144,6 +164,7 @@ echo -e "\033[1;33m1: Valid system users.\033[0m"
 sleep 0.5
 cat /etc/passwd | grep "bash" 2>/dev/null
 cat /etc/passwd | grep "zsh" 2>/dev/null
+cat /etc/passwd | grep "\bash\b" 2>/dev/null
 
 echo -e "\n"
 
@@ -308,6 +329,7 @@ sleep 0.5
 echo -e "\033[1;33m1: Listing KeePass files.\033[0m"
 sleep 0.5
 find / -name "*.kdbx" 2>/dev/null
+find / -name "*.kdb" 2>/dev/null
 
 echo -e "\n"
 
