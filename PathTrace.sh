@@ -80,13 +80,23 @@ echo -e "\n"
 sleep 1
 
 # Listing system process
-echo -e "\033[1;32m========================= 💻 Listing System Process 💻 =========================\033[0m"
+echo -e "\033[1;32m========================= 💻 Listing System Processes by User 💻 =========================\033[0m"
 sleep 0.5
-echo -e "\033[1;33m1: Checking System Process.\033[0m"
+echo -e "\033[1;33m1: Checking System Processes...\033[0m"
 sleep 0.5
-ps -faux
 
-echo -e "\n"
+# Get unique users from ps output and iterate through them
+users=$(ps -faux | awk 'NR>1 {print $1}' | sort | uniq)
+
+for user in $users; do
+  echo -e "\n\033[1;34m===== Processes for user: $user =====\033[0m"
+  # Display header for processes
+  echo -e "\033[1;36mUSER       PID  %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND\033[0m"
+  # Filter processes for the current user
+  ps -faux | awk -v user="$user" '$1 == user {print}' | grep -v "awk -v user=$user"
+done
+
+echo -e "\n\033[1;32m========================= Done Listing Processes =========================\033[0m"
 sleep 1
 
 # Listing sensitive files
@@ -119,6 +129,12 @@ echo -e "\n"
 echo -e "\033[1;33m5: Checking /etc/crontab permissions.\033[0m"
 sleep 0.5
 ls -l /etc/crontab 2>/dev/null
+
+echo -e "\n"
+
+echo -e "\033[1;33m5: Checking /var/spool/cron/crontabs permissions.\033[0m"
+sleep 0.5
+ls -l /var/spool/cron/crontabs 2>/dev/null
 
 echo -e "\n"
 
