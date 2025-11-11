@@ -96,8 +96,7 @@ for user in $users; do
   ps -faux | awk -v user="$user" '$1 == user {print}' | grep -v "awk -v user=$user"
 done
 
-echo -e "\n\033[1;32m========================= Done Listing Processes =========================\033[0m"
-sleep 1
+echo -e "\n"
 
 # Listing sensitive files
 echo -e "\033[1;31m========================= 🚨 Listing Sensitive Files 🚨 =========================\033[0m"
