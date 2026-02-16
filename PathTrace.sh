@@ -219,6 +219,8 @@ echo -e "\033[1;31m========================= 🔐 Listing SSH Keys 🔐 ========
 sleep 0.5
 find / -name "id_rsa" 2>/dev/null
 find / -name "id_rsa.pub" 2>/dev/null
+find / -name "ed25519" 2>/dev/null
+find / -name "ed25519.pub" 2>/dev/null
 find / -name "authorized_keys" 2>/dev/null
 
 echo -e "\n"
