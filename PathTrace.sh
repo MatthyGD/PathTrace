@@ -373,6 +373,86 @@ find / -name "logins.json" 2>/dev/null
 echo -e "\n"
 sleep 1
 
+# Listing possible Images files
+echo -e "\033[1;31m========================= 📸 Listing possible Images files 📸 =========================\033[0m"
+sleep 0.5
+echo -e "\033[1;33m1: Listing IMG files.\033[0m"
+sleep 0.5
+find / -name "*.img" 2>/dev/null
+
+echo -e "\n"
+
+echo -e "\033[1;33m2: Listing JPG files.\033[0m"
+sleep 0.5
+find / -name "*.jpg" 2>/dev/null
+
+echo -e "\n"
+
+echo -e "\033[1;33m2: Listing JPEG files.\033[0m"
+sleep 0.5
+find / -name "*.jpeg" 2>/dev/null
+
+echo -e "\n"
+
+echo -e "\033[1;33m2: Listing PNG files.\033[0m"
+sleep 0.5
+find / -name "*.png" 2>/dev/null
+
+echo -e "\n"
+
+echo -e "\033[1;33m2: Listing GIF files.\033[0m"
+sleep 0.5
+find / -name "*.gif" 2>/dev/null
+
+echo -e "\n"
+
+echo -e "\033[1;33m2: Listing Webp files.\033[0m"
+sleep 0.5
+find / -name "*.webp" 2>/dev/null
+
+echo -e "\n"
+
+echo -e "\033[1;33m2: Listing SVG files.\033[0m"
+sleep 0.5
+find / -name "*.svg" 2>/dev/null
+
+echo -e "\n"
+sleep 1
+
+# Listing possible Audio files
+echo -e "\033[1;31m========================= 🔊 Listing possible Audio files 🔊 =========================\033[0m"
+sleep 0.5
+echo -e "\033[1;33m1: Listing MP3 files.\033[0m"
+sleep 0.5
+find / -name "*.mp3" 2>/dev/null
+
+echo -e "\n"
+
+echo -e "\033[1;33m2: Listing WAW files.\033[0m"
+sleep 0.5
+find / -name "*.wav" 2>/dev/null
+
+echo -e "\n"
+
+echo -e "\033[1;33m2: Listing Flac files.\033[0m"
+sleep 0.5
+find / -name "*.flac" 2>/dev/null
+
+echo -e "\n"
+
+echo -e "\033[1;33m2: Listing AAC files.\033[0m"
+sleep 0.5
+find / -name "*.aac" 2>/dev/null
+
+echo -e "\n"
+
+echo -e "\033[1;33m2: Listing Aiff files.\033[0m"
+sleep 0.5
+find / -name "*.aiff" 2>/dev/null
+
+echo -e "\n"
+sleep 1
+
 # Listing SUID binaries
 echo -e "\033[1;33m========================= 🔧 Listing SUID Binaries 🔧 =========================\033[0m"
 sleep 0.5
